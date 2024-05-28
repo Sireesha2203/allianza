@@ -1,8 +1,21 @@
 .nav-link {
     color: white!important; /* Set text color to white */
+
   }
   
   .nav-link:hover {
-    color: #3d9282!important; /* Change text color on hover */
+    background-color: #ffffff;
+    color: #DE3163 !important; /* Set text color to blue */
+
   }
-  
+  /* NavigationBar.css */
+
+.nav-link.active {
+  font-weight: bold; /* Set font weight to bold */
+  color: #DE3163; /* Change text color for active link */
+}
+/* NavigationBar.css */
+
+.scrolled {
+  background-color: #021154; /* Set the background color when scrolled */
+}

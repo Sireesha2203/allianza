@@ -27,7 +27,7 @@
     {
         "id": "4",
         "name": "strategy_name",
-        "calmarRatio": "3.22",
+        "calmarRatio": "-3.22",
         "overallProfit": "370845",
         "avgDailyProfit": "303.47",
         "winPercent": "0.65"

@@ -2,7 +2,7 @@ import React from 'react';
 import { Dropdown, ButtonGroup } from 'react-bootstrap';
 import JsonData from './Leaderboard.json';
 import './Leaderboard.css';
-
+import { PiArrowsDownUpBold } from "react-icons/pi";
 function Leaderboard() {
   const DisplayData = JsonData.map((info, index) => {
     return (
@@ -35,7 +35,7 @@ function Leaderboard() {
       </header>
       <div className="tab container p-3 pb-1">
         <div className="d-flex justify-content-between align-items-center mb-3">
-          <h2 className="text-center m-3">Basic Backtest</h2>
+          <h2 className="bb text-center m-3">Basic Backtest</h2>
           <Dropdown as={ButtonGroup}>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               Slippage
@@ -51,13 +51,13 @@ function Leaderboard() {
         <table className="table table-hover">
           <thead className="tabhead">
             <tr>
-              <th>Rank <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Name <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Calmar Ratio <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Overall Profit <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Avg Daily Profit <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Win Percent <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
-              <th>Price (Rs) <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Rank <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Name <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Calmar Ratio <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Overall Profit <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Avg Daily Profit <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Win Percent <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
+              <th>Price (Rs) <button className='ms-auto border-0 bg-transparent'><PiArrowsDownUpBold/></button></th>
             </tr>
           </thead>
           <tbody>{DisplayData}</tbody>

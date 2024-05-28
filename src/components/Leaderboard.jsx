@@ -3,6 +3,8 @@ import { Dropdown, ButtonGroup } from 'react-bootstrap';
 import JsonData from './Leaderboard.json';
 import './Leaderboard.css';
 import { PiArrowsDownUpBold } from "react-icons/pi";
+
+
 function Leaderboard() {
   const DisplayData = JsonData.map((info, index) => {
     return (

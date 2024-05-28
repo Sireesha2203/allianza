@@ -15,15 +15,14 @@
     margin-right: 5px;  /* Adjust the spacing between the image and text */
     vertical-align: middle;  /* Align the image vertically with the text */
 }
-
 .table tbody tr {
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-
+    transition: transform 0.3s ease-in-out; /* Adjust the transition duration and easing as needed */
 }
 
 .table tbody tr:hover {
     transform: translateY(-5px); /* Floating effect */
 }
+
 
 .floating-image {
     width: 70px;  /* Adjust the width as needed */
@@ -62,7 +61,7 @@
 }
 
 .even-row{
-    color: #40E0D0!important;
+    color: rgb(54, 194, 178)!important;
 }
 
 .odd-row{

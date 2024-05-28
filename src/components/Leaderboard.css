@@ -1,0 +1,68 @@
+.tab {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 255, 255);
+}
+
+.tab {
+    /* Additional styles for body if needed */
+    border-radius: 15px;
+}
+
+.calmar-ratio-icon {
+    width: 16px;  /* Adjust the width as needed */
+    height: 16px; /* Adjust the height as needed */
+    margin-right: 5px;  /* Adjust the spacing between the image and text */
+    vertical-align: middle;  /* Align the image vertically with the text */
+}
+
+.table tbody tr {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+}
+
+.table tbody tr:hover {
+    transform: translateY(-5px); /* Floating effect */
+}
+
+.floating-image {
+    width: 70px;  /* Adjust the width as needed */
+    height: 70px; /* Maintain aspect ratio */
+    margin-left: 20px; /* Adjust spacing from heading */
+    animation: float 3s ease-in-out infinite; /* Apply float animation */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the height of the float */
+    }
+}
+
+
+
+.dropdown-toggle {
+    background-color:#000046 ;
+    color: #fff;
+  }
+
+.dropdown-toggle:hover {
+    background-color: #1cb5e0;
+  }
+  
+  .dropdown-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-item {
+    color: #000;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #1cb5e0;
+    color: #fff;
+  }
+  

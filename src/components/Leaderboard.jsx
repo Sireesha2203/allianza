@@ -10,16 +10,17 @@ function Leaderboard() {
         <td>{info.id}</td>
         <td>{info.name}</td>
         <td>
-          <img
-            src="/tradearrow.png"
-            alt="Chart Line"
-            className="calmar-ratio-icon"
-          />{' '}
-          {info.calmarRatio}
+          {info.calmarRatio > 0 &&  
+                <img src="calmarRatioProfit.png" alt="Chart Line" className="calmar-ratio-icon" /> 
+            }
+            {info.calmarRatio < 0 &&  
+                <img src="calmarRatioLoss.png" alt="Chart Line" className="calmar-ratio-icon" /> }
+            {info.calmarRatio}
         </td>
         <td>{info.overallProfit}</td>
         <td>{info.avgDailyProfit}</td>
         <td>{info.winPercent}</td>
+        <td>{info.price ? info.price : '-'}</td> 
       </tr>
     );
   });
@@ -50,12 +51,13 @@ function Leaderboard() {
         <table className="table table-hover">
           <thead className="tabhead">
             <tr>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Calmar Ratio</th>
-              <th>Overall Profit</th>
-              <th>Avg Daily Profit</th>
-              <th>Win Percent</th>
+              <th>Rank <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Name <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Calmar Ratio <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Overall Profit <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Avg Daily Profit <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Win Percent <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
+              <th>Price (Rs) <button className='ms-auto border-0 bg-transparent'>↓↑</button></th>
             </tr>
           </thead>
           <tbody>{DisplayData}</tbody>

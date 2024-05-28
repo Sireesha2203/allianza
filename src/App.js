@@ -1,12 +1,15 @@
-import Leaderboard from "./components/Leaderboard.js";
+import Leaderboard from "./components/Leaderboard.jsx";
 import './App.css';
-// import NavigationBar from "./components/NavigationBar.js";
-
+import NavigationBar from "./components/NavigationBar.jsx";
+import ProfileNavBar from "./components/ProfileNavBar.jsx";
 
 function App() {
   return (
     <div className="App">
-      {/* <NavigationBar /> */}
+      <div className="sticky-top">
+        <ProfileNavBar />
+        <NavigationBar />
+      </div>
       <div className="">
         <Leaderboard />
       </div>

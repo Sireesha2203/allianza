@@ -9,7 +9,7 @@ function ProfileNavBar() {
       <Navbar expand="lg" variant="dark" className="shadow-sm" style={{ background: '#000349', borderBottom: 'none', height: '60px',margin:'0px' }}>
         <Container>
           <Navbar.Brand href="/" className="fw-bold rounded-pill" style={{ color: '#fff', height: '60px', lineHeight: '60px' }}>
-            <img src="brand.jpg" alt="brand" style={{ maxHeight: '90%', verticalAlign: 'middle' }} />
+            <img src="brand.jpg" alt="brand" className='rounded-pill' style={{ maxHeight: '90%', verticalAlign: 'middle' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

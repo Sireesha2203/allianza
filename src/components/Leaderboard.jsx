@@ -9,20 +9,20 @@ function Leaderboard() {
   const DisplayData = JsonData.map((info, index) => {
     return (
       <tr key={info.id} className="">
-        <td>{info.id}</td>
-        <td>{info.name}</td>
-        <td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.id}</td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.name}</td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
           {info.calmarRatio > 0 &&  
                 <img src="calmarRatioProfit.png" alt="Chart Line" className="calmar-ratio-icon" /> 
-            }
-            {info.calmarRatio < 0 &&  
-                <img src="calmarRatioLoss.png" alt="Chart Line" className="calmar-ratio-icon" /> }
-            {info.calmarRatio}
+          }
+          {info.calmarRatio < 0 &&  
+              <img src="calmarRatioLoss.png" alt="Chart Line" className="calmar-ratio-icon" /> }
+          {info.calmarRatio}
         </td>
-        <td>{info.overallProfit}</td>
-        <td>{info.avgDailyProfit}</td>
-        <td>{info.winPercent}</td>
-        <td>{info.price ? info.price : '-'}</td> 
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.overallProfit}</td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.avgDailyProfit}</td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.winPercent}</td>
+        <td className={index % 2 === 0 ? 'even-row' : 'odd-row'}>{info.price ? info.price : '-'}</td> 
       </tr>
     );
   });

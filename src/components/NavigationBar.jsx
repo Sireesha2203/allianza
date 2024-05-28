@@ -23,19 +23,17 @@ function NavigationBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-
+    paddingStyle = window.innerWidth < 1465 ? '3%' : '10%';
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const containerStyle = {
-    width: window.innerWidth < 1400 ? '95%' : '80%'
-  };
+  var paddingStyle = window.innerWidth < 1300 ? '3%' : '8%';
 
   return (
     <>
-      <Navbar expand={'lg'} className={`border border-dark  mx-auto  ${isScrolled ? 'scrolled' : ''}`} style={{ background: isScrolled ? '#021154' : 'transparent', borderBottom: 'none' ,margin:'0px' }} variant='dark'>
+      <Navbar expand={'lg'} className={`border border-dark  mx-auto  ${isScrolled ? 'scrolled' : ''}`} style={{ background: isScrolled ? '#021154' : 'transparent', borderBottom: 'none' ,margin:'0px',paddingLeft:paddingStyle,paddingRight:paddingStyle }} variant='dark'>
         <Container fluid>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

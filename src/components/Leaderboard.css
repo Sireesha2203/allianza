@@ -61,6 +61,13 @@
     color:#DE3163;
 }
 
+.even-row{
+    color: #40E0D0!important;
+}
+
+.odd-row{
+    color:#DE3163!important;
+}
 
 .dropdown-toggle {
     background-color:#000046 ;

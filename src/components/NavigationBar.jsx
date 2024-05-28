@@ -23,7 +23,7 @@ function NavigationBar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    paddingStyle = window.innerWidth < 1465 ? '3%' : '10%';
+    paddingStyle = window.innerWidth < 1300 ? '3%' : '10%';
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

@@ -1,11 +1,12 @@
 .tab {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background: rgb(255, 255, 255);
+    border-radius: 15px;
+
 }
 
-.tab {
-    /* Additional styles for body if needed */
-    border-radius: 15px;
+.head{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .calmar-ratio-icon {
@@ -39,6 +40,22 @@
         transform: translateY(-20px); /* Adjust the height of the float */
     }
 }
+
+.floating-image2 {
+    width: 18%;  /* Adjust the width as needed */
+    height: 18%; /* Maintain aspect ratio */
+    animation: float2 3s ease-in-out infinite; /* Apply float animation */
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(-20px); /* Adjust the height of the float */
+    }
+}
+
 
 .bb{
     color:#DE3163;

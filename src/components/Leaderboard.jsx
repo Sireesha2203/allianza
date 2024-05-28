@@ -36,6 +36,8 @@ function Leaderboard() {
       <div className="tab container p-3 pb-1">
         <div className="d-flex justify-content-between align-items-center mb-3">
           <h2 className="bb text-center m-3">Basic Backtest</h2>
+          <img src="/bitcoin.avif" alt="Floating" className="floating-image2" />
+
           <Dropdown as={ButtonGroup}>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               Slippage
